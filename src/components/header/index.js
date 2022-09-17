@@ -1,29 +1,25 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, List, NavItem } from "./styles";
-import {
-  solid,
-  regular,
-  brands,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
+import { bio } from "../../data/resume-data";
 
 const Header = (props) => {
+  const { name } = bio;
+
   return (
-    <Container className="App-header">
-      <div>
-        <FontAwesomeIcon icon={solid("bars")} swapOpacity beat />
-      </div>
-      <h1>Explore Hyderabad</h1>
+    <Container className="">
+      <h1>{name}</h1>
 
       <nav>
         <List>
           <NavItem>
-            <button>Home</button>
+            <button>Achievements</button>
           </NavItem>
           <NavItem>
-            <button>About</button>
+            <button>Skills</button>
           </NavItem>
           <NavItem>
-            <button>Contact</button>
+            <a href={bio.linkedInUrl} target="_blank" rel="noreferrer">
+              linkedIn
+            </a>
           </NavItem>
         </List>
       </nav>
