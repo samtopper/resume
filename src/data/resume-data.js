@@ -3,6 +3,7 @@ export const bio = {
   mobile: "+91 73867 55537",
   email: "sameer.cse.jobs@gmail.com",
   linkedInUrl: "https://www.linkedin.com/in/knowsameer/",
+  githubUrl: "https://github.com/samtopper",
   aboutMe: `I am a Frontend Developer with a passion for learning. And am always ready to take up new
     challenges. I have 5.8+ years of experience, working extensively in responsive web design, creating
     reusable components, accessibility & unit testing.

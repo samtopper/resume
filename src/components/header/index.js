@@ -1,20 +1,27 @@
 import { Container, List, NavItem } from "./styles";
 import { bio } from "../../data/resume-data";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const { name } = bio;
 
   return (
     <Container className="">
-      <h1>{name}</h1>
+      <Name className="bold">{name}</Name>
 
       <nav>
         <List>
           <NavItem>
+            <Link to="/components">Components</Link>
+          </NavItem>
+          <NavItem>
             <button>Achievements</button>
           </NavItem>
           <NavItem>
-            <button>Skills</button>
+            <a href={bio.githubUrl} target="_blank" rel="noreferrer">
+              github
+            </a>
           </NavItem>
           <NavItem>
             <a href={bio.linkedInUrl} target="_blank" rel="noreferrer">
@@ -27,4 +34,7 @@ const Header = (props) => {
   );
 };
 
+const Name = styled.h1`
+  font-family: "Inconsolata", monospace;
+`;
 export default Header;
