@@ -5,10 +5,13 @@ import "./App.css";
 import styled from "styled-components";
 import { Routes, Route } from "react-router-dom";
 import Components from "./components";
+// import VotingApp from "./voting-app";
 
 function App() {
   return (
     <>
+      {/* <VotingApp /> */}
+
       <AppContainer>
         <Header />
         <Main />

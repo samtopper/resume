@@ -28,7 +28,6 @@ const Dropdown = ({ label, id, grouping, options, groups }) => {
           </>
         )}
       </select>
-      &#5169;
     </>
   );
 };

@@ -2,7 +2,8 @@
 import styled from "styled-components";
 import { bio } from "../../data/resume-data";
 import avatar from "../../images/sameer.jpeg";
-import Dropdown from "../dropdown";
+
+import Projects from "../projects";
 const Main = () => {
   return (
     <>
@@ -13,33 +14,7 @@ const Main = () => {
         <AboutMe>{bio.aboutMe}</AboutMe>
       </Container>
 
-      <Dropdown
-        label="Choose a car:"
-        id="cars"
-        grouping={false}
-        options={[
-          { label: "Mercedes", value: "mercedes" },
-          { label: "Audi", value: "audi" },
-          { label: "Saab", value: "saab" },
-          { label: "Volvo", value: "volvo" },
-        ]}
-        groups={[
-          {
-            groupLabel: "German Cars",
-            options: [
-              { label: "Mercedes", value: "mercedes" },
-              { label: "Audi", value: "audi" },
-            ],
-          },
-          {
-            groupLabel: "Swedish Cars",
-            options: [
-              { label: "Volvo", value: "volvo" },
-              { label: "Saab", value: "saab" },
-            ],
-          },
-        ]}
-      />
+      <Projects />
     </>
   );
 };
