@@ -1,4 +1,4 @@
-import { Container, List, NavItem } from "./styles";
+import { Container, List, NavItem, PageRightCenter } from "./styles";
 import { bio } from "../../data/resume-data";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
@@ -30,6 +30,8 @@ const Header = (props) => {
           </NavItem>
         </List>
       </nav>
+
+      <PageRightCenter>feedback</PageRightCenter>
     </Container>
   );
 };

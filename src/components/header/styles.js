@@ -14,3 +14,14 @@ export const NavItem = styled.li`
   margin-right: 4px;
   list-style: none;
 `;
+
+export const PageRightCenter = styled.div`
+  position: absolute;
+  right: 0;
+  top: 50%;
+  padding: 8px;
+  background: antiquewhite;
+  border-radius: 5px 0 0 5px;
+  writing-mode: vertical-lr;
+  /* text-orientation: upright; */
+`;
