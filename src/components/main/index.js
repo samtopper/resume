@@ -2,8 +2,9 @@
 import styled from "styled-components";
 import { bio } from "../../data/resume-data";
 import avatar from "../../images/sameer.jpeg";
-
 import Projects from "../projects";
+import "./main.css";
+
 const Main = () => {
   return (
     <>
@@ -11,7 +12,16 @@ const Main = () => {
         <Avatar>
           <img src={avatar} alt="sameer" />
         </Avatar>
-        <AboutMe>{bio.aboutMe}</AboutMe>
+        <AboutMe>
+          I am a
+          <Badge className="typewriter">
+            <span>Frontend Developer</span>
+          </Badge>
+          {bio.aboutMe}
+        </AboutMe>
+        <div class="typewriter">
+          <h1>Frontend Developer.</h1>
+        </div>
       </Container>
 
       <Projects />
@@ -30,9 +40,14 @@ const Avatar = styled.div`
   }
 `;
 const AboutMe = styled.div`
+  width: 60%;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
   font-size: 20px;
 `;
 
+const Badge = styled.span`
+  padding: 4px;
+  background-color: orange;
+`;
 export default Main;
