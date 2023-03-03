@@ -1,0 +1,29 @@
+{
+    "projects": [
+        {
+            "title": "Explore Hyderabad",
+            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "projectLink": "https://github.com/samtopper/explore-hyderabad",
+            "linkText": "check project"
+        },
+        {
+            "title": "Explore Hyderabad",
+            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "projectLink": "https://github.com/samtopper/explore-hyderabad",
+            "linkText": "check project"
+        },
+        {
+            "title": "Explore Hyderabad",
+            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "projectLink": "https://github.com/samtopper/explore-hyderabad",
+            "linkText": "check project"
+        },
+        {
+            "title": "Explore Hyderabad",
+            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "projectLink": "https://github.com/samtopper/explore-hyderabad",
+            "linkText": "check project"
+        }
+    ],
+    "status": "success"
+}

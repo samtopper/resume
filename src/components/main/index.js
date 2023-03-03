@@ -1,9 +1,11 @@
-// import React from "react";
 import styled from "styled-components";
-import { bio } from "../../data/resume-data";
-import avatar from "../../images/sameer.jpeg";
 import Projects from "../projects";
+
 import "./main.css";
+
+import avatar from "../../images/sameer.jpeg";
+import { bio } from "../../data/resume-data";
+import projectsData from "../../data/projectsData.json";
 
 const Main = () => {
   return (
@@ -19,12 +21,12 @@ const Main = () => {
           </Badge>
           {bio.aboutMe}
         </AboutMe>
-        <div class="typewriter">
+        <div className="typewriter">
           <h1>Frontend Developer.</h1>
         </div>
       </Container>
 
-      <Projects />
+      <Projects projects={projectsData.projects} />
     </>
   );
 };
