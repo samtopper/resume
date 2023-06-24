@@ -7,21 +7,27 @@
             "linkText": "check project"
         },
         {
-            "title": "Explore Hyderabad",
-            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "title": "Welding Works",
+            "info": "all your home & business welding works done here.",
             "projectLink": "https://github.com/samtopper/explore-hyderabad",
             "linkText": "check project"
         },
         {
-            "title": "Explore Hyderabad",
-            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "title": "Calligraphy ",
+            "info": "Want to decor your home with arabic calligraphy? You are at the right place.",
             "projectLink": "https://github.com/samtopper/explore-hyderabad",
             "linkText": "check project"
         },
         {
-            "title": "Explore Hyderabad",
-            "info": "display locations and information about historical places & amusement parks in & around Hyderabad.",
+            "title": "Meme Generator",
+            "info": "Want some fun, get a quick meme here",
             "projectLink": "https://github.com/samtopper/explore-hyderabad",
+            "linkText": "check project"
+        },
+        {
+            "title": "Voting App",
+            "info": "A simple online voting app",
+            "projectLink": "",
             "linkText": "check project"
         }
     ],
