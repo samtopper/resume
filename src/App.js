@@ -5,6 +5,7 @@ import "./App.css";
 import styled from "styled-components";
 import { Routes, Route } from "react-router-dom";
 import Components from "./components";
+import BackToTopButton from "./components/backToTopButton";
 // import VotingApp from "./voting-app";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Main />
         <Footer />
+        <BackToTopButton />
       </AppContainer>
 
       <Routes>

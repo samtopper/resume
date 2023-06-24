@@ -1,0 +1,24 @@
+.back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 40px;
+    background-color: rgb(239, 79, 95);;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    /* transition: transform 0.25s ease 0s, opacity 0.25s ease 0s, box-shadow 0.25s ease 0s; */
+  }
+
+  .back-to-top-btn:hover{
+    background: rgb(224, 53, 70);
+    /* border-color: rgb(36, 150, 63); */
+  }
+  
+  .back-to-top-btn.show {
+    display: block;
+  }
