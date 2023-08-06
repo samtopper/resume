@@ -4,7 +4,7 @@ import Projects from "../projects";
 import "./main.css";
 
 import avatar from "../../images/sameer.jpeg";
-import { bio } from "../../data/resume-data";
+// import { bio } from "../../data/resume-data";
 import projectsData from "../../data/projectsData.json";
 
 const Main = () => {
@@ -19,7 +19,7 @@ const Main = () => {
           <Badge className="typewriter">
             <span>Frontend Developer</span>
           </Badge>
-          {bio.aboutMe}
+          {/* {bio.aboutMe} */}
         </AboutMe>
         <div className="typewriter">
           <h1>Frontend Developer.</h1>
