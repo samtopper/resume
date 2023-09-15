@@ -6,6 +6,7 @@ import "./main.css";
 import avatar from "../../images/sameer.jpeg";
 // import { bio } from "../../data/resume-data";
 import projectsData from "../../data/projectsData.json";
+import SampleAgGrid from "../sampleAgGrid";
 
 const Main = () => {
   return (
@@ -25,6 +26,9 @@ const Main = () => {
           <h1>Frontend Developer.</h1>
         </div>
       </Container>
+      <div>skills</div>
+      <h2>ag-grid</h2>
+      <SampleAgGrid />
 
       <Projects projects={projectsData.projects} />
     </>
