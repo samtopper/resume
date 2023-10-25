@@ -7,7 +7,8 @@ import avatar from "../../images/sameer.jpeg";
 // import { bio } from "../../data/resume-data";
 import projectsData from "../../data/projectsData.json";
 import SampleAgGrid from "../sampleAgGrid";
-
+import { Profile } from "../profile";
+import bgImg from "../../images/bg-img-1.webp";
 const Main = () => {
   return (
     <>
@@ -16,17 +17,27 @@ const Main = () => {
           <img src={avatar} alt="sameer" />
         </Avatar>
         <AboutMe>
-          I am a
+          Hi, My Name is Sameer & I am a
           <Badge className="typewriter">
-            <span>Frontend Developer</span>
+            <span>Web Developer</span>
           </Badge>
           {/* {bio.aboutMe} */}
         </AboutMe>
         <div className="typewriter">
-          <h1>Frontend Developer.</h1>
+          my skills are
+          <h1>React</h1>
+        </div>
+        <div>
+          <picture>
+            <source srcset={bgImg} type="image/webp" alt="bg img"></source>
+            <source srcset="../../images/Sameer.png" type="image/jpeg" />
+            <img src="img.jpg" alt="" />
+          </picture>
         </div>
       </Container>
       <div>skills</div>
+      <Profile />
+
       <h2>ag-grid</h2>
       <SampleAgGrid />
 
