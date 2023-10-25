@@ -8,11 +8,18 @@ import FileDownloadButton from "../downloadFile";
 const Header = (props) => {
   return (
     <Container className="">
-      <img src={logo} alt="logo" className="logo" style={{ width: "100px" }}></img>
+      <img
+        src={logo}
+        alt="logo"
+        className="logo"
+        style={{ width: "100px" }}
+      ></img>
       <Name className="bold">{"My Portfolio"}</Name>
-
       <nav>
         <List>
+          <NavItem>
+            <Link to="/usecases">Usecases</Link>
+          </NavItem>
           <NavItem>
             <Link to="/components">Components</Link>
           </NavItem>

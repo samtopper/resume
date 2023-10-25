@@ -7,6 +7,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   background-color: ${primary1};
+  align-items: center;
 `;
 
 export const List = styled.ul`

@@ -1,0 +1,6 @@
+.profileContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    background-color: rgb(87, 123, 240);
+}
