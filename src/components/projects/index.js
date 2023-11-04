@@ -4,7 +4,7 @@ import { PropTypes } from "prop-types";
 const Projects = ({ projects }) => {
   return (
     <>
-      <h1>My Projects</h1>
+      <h2>Projects</h2>
 
       <ProjectsContainer>
         {projects.map((item, i) => (
@@ -53,5 +53,5 @@ const Img = styled.img`
 const ProjectsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;

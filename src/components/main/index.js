@@ -1,53 +1,71 @@
 import styled from "styled-components";
 import Projects from "../projects";
+import avatar from "../../images/sameer.jpeg";
+import projectsData from "../../data/projectsData.json";
+import bgImg from "../../images/bg-img-1.webp";
+import ContactForm from "../contactForm";
+import { Route, Routes } from "react-router-dom";
+import Components from "..";
+import { UseCases } from "../../usecases";
 
 import "./main.css";
 
-import avatar from "../../images/sameer.jpeg";
-// import { bio } from "../../data/resume-data";
-import projectsData from "../../data/projectsData.json";
-import SampleAgGrid from "../sampleAgGrid";
-import { Profile } from "../profile";
-import bgImg from "../../images/bg-img-1.webp";
-const Main = () => {
+const Main = (props) => {
   return (
-    <>
-      <Container>
-        <Avatar>
-          <img src={avatar} alt="sameer" />
-        </Avatar>
-        <AboutMe>
-          Hi, My Name is Sameer & I am a
-          <Badge className="typewriter">
-            <span>Web Developer</span>
-          </Badge>
-          {/* {bio.aboutMe} */}
-        </AboutMe>
+    <MainContainer>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/components" element={<Components />} />
+
+        <Route path="/usecases" element={<UseCases />} />
+
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
+    </MainContainer>
+  );
+};
+
+const Home = () => (
+  <>
+    <MeContainer>
+      <Avatar>
+        <img src={avatar} alt="sameer" />
+      </Avatar>
+      <AboutMe>
+        Hi, My Name is Sameer & I am a
+        <Badge className="typewriter">
+          <span>Web Developer</span>
+        </Badge>
         <div className="typewriter">
           my skills are
           <h1>React</h1>
         </div>
-        <div>
-          <picture>
-            <source srcset={bgImg} type="image/webp" alt="bg img"></source>
-            <source srcset="../../images/Sameer.png" type="image/jpeg" />
-            <img src="img.jpg" alt="" />
-          </picture>
-        </div>
-      </Container>
-      <div>skills</div>
-      <Profile />
+      </AboutMe>
 
-      <h2>ag-grid</h2>
-      <SampleAgGrid />
+      <div>
+        <picture>
+          <source srcSet={bgImg} type="image/webp" alt="bg img"></source>
+          <source srcSet="../../images/Sameer.png" type="image/jpeg" />
+          <img src="img.jpg" alt="" />
+        </picture>
+      </div>
+    </MeContainer>
+    <h2>Skills</h2>
+    <div>html, css & JavaScript</div>
+    <div>libraries used in react ecosystem</div>
+    <div>
+      axios, storybook, jest, react testing library, webpack, react-router,
+      ag-grid, chartjs
+    </div>
+    <Projects projects={projectsData.projects} />
+  </>
+);
 
-      <Projects projects={projectsData.projects} />
-    </>
-  );
-};
-
-const Container = styled.div`
+const MeContainer = styled.div`
   display: flex;
+`;
+const MainContainer = styled.div`
+  margin: 0 40px;
 `;
 const Avatar = styled.div`
   width: 40%;

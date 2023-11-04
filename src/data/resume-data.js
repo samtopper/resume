@@ -1,6 +1,6 @@
 export const bio = {
   name: "Sameer Ahmed Khan",
-  mobile: "+91 73867 55537",
+  mobile: "+91 12345 12345",
   email: "sameer.cse.jobs@gmail.com",
   linkedInUrl: "https://www.linkedin.com/in/knowsameer/",
   githubUrl: "https://github.com/samtopper",
