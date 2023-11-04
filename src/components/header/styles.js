@@ -15,8 +15,14 @@ export const List = styled.ul`
 `;
 export const NavItem = styled.li`
   padding: 4px;
-  margin-right: 4px;
+  margin: 4px;
   list-style: none;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
 `;
 
 export const PageRightCenter = styled.div`

@@ -1,20 +1,23 @@
 import { Container, List, NavItem, PageRightCenter } from "./styles";
-import { bio } from "../../data/resume-data";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo1.png";
-import FileDownloadButton from "../downloadFile";
 
 const Header = (props) => {
   return (
     <Container className="">
-      <img
-        src={logo}
-        alt="logo"
-        className="logo"
-        style={{ width: "100px" }}
-      ></img>
-      <Name className="bold">{"My Portfolio"}</Name>
+      <Link to={"/"}>
+        <img
+          src={logo}
+          alt="logo"
+          className="logo"
+          style={{ width: "100px" }}
+          onClick={() => {
+            console.log("clicked logo");
+          }}
+        ></img>
+      </Link>
+      <Name className="bold">{"Sameer Ahmed Khan"}</Name>
       <nav>
         <List>
           <NavItem>
@@ -24,17 +27,7 @@ const Header = (props) => {
             <Link to="/components">Components</Link>
           </NavItem>
           <NavItem>
-            <FileDownloadButton />
-          </NavItem>
-          <NavItem>
-            <a href={bio.githubUrl} target="_blank" rel="noreferrer">
-              github
-            </a>
-          </NavItem>
-          <NavItem>
-            <a href={bio.linkedInUrl} target="_blank" rel="noreferrer">
-              linkedIn
-            </a>
+            <Link to="/contact">Contact</Link>
           </NavItem>
         </List>
       </nav>

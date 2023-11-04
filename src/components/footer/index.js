@@ -1,33 +1,33 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 import { bio } from "../../data/resume-data";
-import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 //@ts-check
 
 const Footer = (props) => {
   return (
     <Container>
-      <p className="bold">reach me out here</p>
       <p>
         <FontAwesomeIcon icon={faEnvelope} />
         <span className="" style={{ marginLeft: "4px" }}>
           {bio.email}
         </span>
       </p>
-      <p>
-        <FontAwesomeIcon icon={faMobile} />
-        <span className="" style={{ marginLeft: "4px" }}>
-          {bio.mobile}
-        </span>
-      </p>
+
+      <a href={bio.githubUrl} target="_blank" rel="noreferrer">
+        github
+      </a>
+      <a href={bio.linkedInUrl} target="_blank" rel="noreferrer">
+        linkedIn
+      </a>
     </Container>
   );
 };
 
 const Container = styled.div`
-  background-color: aqua;
+  background-color: aliceblue;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `;
 export default Footer;

@@ -24,7 +24,7 @@ const FileDownloadButton = () => {
 
   return (
     <button onClick={handleDownload}>
-      My Resume
+      Resume
       <FontAwesomeIcon icon={faFileDownload} />
     </button>
   );
